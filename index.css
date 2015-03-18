@@ -40,7 +40,12 @@
 	float: left;
 	clear: both;
 }
-#gitbutton{
+a {
 	text-decoration: none;
-	color: black;
+}
+a:link, a:visited {
+    color: blue;
+}
+a:hover {
+    color: red;
 }
