@@ -1,4 +1,4 @@
-ul {
+#navbar{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@ ul {
     width: 100%;
 }
 
-li {
+.item{
     float: left;
 }
 .all{
@@ -16,7 +16,7 @@ li {
     background-color: #C9C7C7;
 }
 
-a:link, a:visited {
+.link1:link, .link1:visited {
     display: block;
     width: 120px;
     font-weight: bold;
@@ -28,6 +28,14 @@ a:link, a:visited {
     text-transform: uppercase;
 }
 
-a:hover, a:active {
+.link1:hover, .link1:active {
     background-color: #4FACD1;
+}
+
+#icon{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
 }
