@@ -1,15 +1,4 @@
-#navbar{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    width: 100%;
-}
-
-.item{
-    float: left;
-}
-.all{
+﻿.all{
     color: black;
     margin: auto;
     font-family: Verdana,serif;
@@ -38,4 +27,9 @@
     padding: 0;
     overflow: hidden;
     width: 100%;
+}
+
+.item {
+	margin-left:5px;
+	float:left;
 }

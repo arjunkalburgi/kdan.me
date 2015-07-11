@@ -1,4 +1,4 @@
-#navbar{
+﻿#navbar{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -6,9 +6,6 @@
     width: 100%;
 }
 
-.item{
-    float: left;
-}
 .all{
     color: black;
     margin: auto;
@@ -16,9 +13,10 @@
     background-color: #C9C7C7;
 }
 
-a:link, a:visited {
-    display: block;
-    width: 120px;
+
+.menu_link:link, .menu_link:visited{
+	display: block;
+    width: 100%;
     font-weight: bold;
     color: #000000;
     background-color: #61D2FF;
@@ -26,8 +24,14 @@ a:link, a:visited {
     padding: 4px;
     text-decoration: none;
     text-transform: uppercase;
+
 }
 
-a:hover, a:active {
+.menu_item{
+    float: left;
+    width:25%;
+}
+
+.menu_link:hover, .menu_link:active {
     background-color: #4FACD1;
 }
