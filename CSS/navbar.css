@@ -30,6 +30,7 @@
 .menu_item{
     float: left;
     width:25%;
+    min-width:120px;
 }
 
 .menu_link:hover, .menu_link:active {
