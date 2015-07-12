@@ -13,10 +13,12 @@
     background-color: #C9C7C7;
 }
 
+.menu_link{
+	width: 100%;
+}
 
 .menu_link:link, .menu_link:visited{
 	display: block;
-    width: 100%;
     font-weight: bold;
     color: #000000;
     background-color: #61D2FF;
