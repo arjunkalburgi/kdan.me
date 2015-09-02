@@ -1,41 +1,30 @@
 ﻿.all{
     color: black;
-    margin: auto;
     font-family: Verdana,serif;
     background-color: #C9C7C7;
 }
 
-.link1:link, .link1:visited {
-    display: block;
-    width: 120px;
-    font-weight: bold;
-    color: #000000;
-    background-color: #61D2FF;
-    text-align: center;
-    padding: 4px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.link1:hover, .link1:active {
-    background-color: #4FACD1;
-}
-
 #icon{
     list-style-type: none;
-    margin: 0;
     padding: 0;
     overflow: hidden;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.icon{
-	width:100%;
-	max-width:250px;
-	
-}
-
-.item {
-	margin-left:5px;
+.img {
+    margin-bottom: 5px;
 	float:left;
+    width:24%;
+    min-width: 120px;
 }
+
+.icon_item{
+    list-style-type: none;
+}
+
+.img1 img:last-child{display:none}
+.img1:hover img:first-child{display:none}
+.img1:hover img:last-child{display:inline-block}
+

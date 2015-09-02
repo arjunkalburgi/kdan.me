@@ -1,64 +1,73 @@
 <!DOCTYPE html>
 <html lang=en class="all">
     <head>
-	    <link type="text/css" rel="stylesheet" href="CSS/contact.css"/>
-	    <link type="text/css" rel="stylesheet" href="CSS/navbar.css"/>
-	    <title>Contact</title>
-    	<script type="text/javascript">
-<!--
-function FP_swapImg() {//v1.0
- var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
- n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
- elm.$src=elm.src; elm.src=args[n+1]; } }
-}
-
-function FP_preloadImgs() {//v1.0
- var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
- for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
-}
-
-function FP_getObjectByID(id,o) {//v1.0
- var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
- else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
- if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
- for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
- f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
- for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
- return null;
-}
-
-function FP_swapImgRestore() {//v1.0
- var doc=document,i; if(doc.$imgSwaps) { for(i=0;i<doc.$imgSwaps.length;i++) {
-  var elm=doc.$imgSwaps[i]; if(elm) { elm.src=elm.$src; elm.$src=null; } } 
-  doc.$imgSwaps=null; }
-}
-// -->
-</script>
+        <link type="text/css" rel="stylesheet" href="CSS/contact.css"/>
+        <link type="text/css" rel="stylesheet" href="CSS/navbar.css"/>
+        <title>Contact</title>
     </head>
 
-    <body id="body" onload="FP_preloadImgs(/*url*/'images/github_hover.png',/*url*/'images/gmail_hover.png',/*url*/'images/fb250_hover.png',/*url*/'images/li250_hover.png')">
+    <body id="body">
       <ul id="navbar">
-	      <li class="menu_item"><a class="menu_link" href="index.html">Home</a></li>
-	      <li class="menu_item"><a class="menu_link" href="projects.html">Projects</a></li>
-	      <li class="menu_item"><a class="menu_link" href="about.html">About</a></li>
-	      <li class="menu_item"><a class="menu_link" href="contact.html">Contact</a></li>
-	    </ul>
+          <li class="menu_item"><a class="menu_link" href="index.html">Home</a></li>
+          <li class="menu_item"><a class="menu_link" href="projects.html">Projects</a></li>
+          <li class="menu_item"><a class="menu_link" href="about.html">About</a></li>
+          <li class="menu_item"><a class="menu_link" href="contact.html">Contact</a></li>
+        </ul>
 
     <h1>Find me on: </h1>
+            <ul id="icon">
+                <li class="icon_item" >
+            <a href="https://github.com/icydusk" class="img1">
+                <img src="images/github250.png" class ="img">
+                <img src="images/github250_hover.png" class ="img">
+            </a>
+        </li>
+        <li class="icon_item" >
+            <a href="mailto:kdan@ualberta.ca" class="img1">
+                <img src="images/gmail250.png" class ="img" style="margin-left: 1%">
+                <img src="images/gmail250_hover.png" class ="img" style="margin-left: 1%">
+            </a>
+        </li>
+        <li class="icon_item">
+            <a href="http://facebook.com/kdan.hil" class="img1">
+                <img src="images/fb250.png" class ="img" style="margin-left: 1%">
+                <img src="images/fb250_hover.png" class ="img" style="margin-left: 1%">
+            </a>
+        </li>   
+        <li class="icon_item">
+            <a href="http://ca.linkedin.com/in/kdanh" class="img1">
+                <img src="images/li250.png" class ="img" style="margin-left: 1%">
+                <img src="images/li250_hover.png" class ="img" style="margin-left: 1%">
+            </a>
+        </li> 
+        </ul>
+    <!--
     <ul id="icon">
-    	<li class="item"><a href="https://github.com/icydusk" class="icon">
-		<img src="images/github250.png" id="img1" class ="img" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img1',/*url*/'images/github250_hover.png')"></a></li>
-    	<li class="item"><a href="mailto:kdan@ualberta.ca" class="icon">
-		<img src="images/gmail250.png" id="img2" class ="img" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img2',/*url*/'images/gmail250_hover.png')"></a></li>
-		<li class="item"><a href="http://facebook.com/kdan.hil" class="icon">
-		<img src="images/fb250.png" id="img3" class ="img" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img3',/*url*/'images/fb250_hover.png')"></a></li>
-    	<li class="item"></li>
-    	
-    	
-    	<li><a href="http://ca.linkedin.com/in/kdanh" class="icon">
-		<img src="images/li250.png" id="img4" class ="img" onmouseout="FP_swapImgRestore()" onmouseover="FP_swapImg(1,1,/*id*/'img4',/*url*/'images/li250_hover.png')"></a></li>
-    	
-    	
+        <li>
+            <a href="https://github.com/icydusk" class="img1">
+                <img src="images/github250.png" class ="img">
+                <img src="images/github250_hover.png" class ="img">
+            </a>
+        </li>
+        <li>
+            <a href="mailto:kdan@ualberta.ca" class="img1">
+                <img src="images/gmail250.png" class ="img">
+                <img src="images/gmail250_hover.png" class ="img">
+            </a>
+        </li>
+        <li>
+            <a href="http://facebook.com/kdan.hil" class="img1">
+                <img src="images/fb250.png" class ="img">
+                <img src="images/fb250_hover.png" class ="img">
+            </a>
+        </li>    
+        <li>
+            <a href="http://ca.linkedin.com/in/kdanh" class="img1">
+                <img src="images/li250.png" class ="img">
+                <img src="images/li250_hover.png" class ="img">
+            </a>
+        </li> 
     </ul>
+    -->
     </body>
 </html>
