@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang=en class="all">
     <head>
-	    <link type="text/css" rel="stylesheet" href="CSS/projects.css"/>
-	    <link type="text/css" rel="stylesheet" href="CSS/navbar.css"/>
-	    <script src="scripts/index.js"></script>
-	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	    <script src="scripts/index.js"></script>
-	    <title>Projects</title>
+        <link type="text/css" rel="stylesheet" href="CSS/projects.css"/>
+        <link type="text/css" rel="stylesheet" href="CSS/navbar.css"/>
+        <script src="scripts/index.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="scripts/index.js"></script>
+        <title>Projects</title>
     </head>
 
-	<body>
-	    <ul id="navbar">
-	      <li class="menu_item"><a class="menu_link" href="index.html">Home</a></li>
-	      <li class="menu_item"><a class="menu_link" href="projects.html">Projects</a></li>
-	      <li class="menu_item"><a class="menu_link" href="about.html">About</a></li>
-	      <li class="menu_item"><a class="menu_link" href="contact.html">Contact</a></li>
-	    </ul>
-	    <br>
+    <body>
+        <ul id="navbar">
+          <li class="menu_item"><a class="menu_link" href="index.html">Home</a></li>
+          <li class="menu_item"><a class="menu_link" href="projects.html">Projects</a></li>
+          <li class="menu_item"><a class="menu_link" href="about.html">About</a></li>
+          <li class="menu_item"><a class="menu_link" href="contact.html">Contact</a></li>
+        </ul>
+        <br>
 
-	    <div align="center">
-   		<div class="project_viewer">
+        <div align="center">
+        <div class="project_viewer">
                 <div id="viewer" class="project_preview">
                 try:<br>
-				<div style="display: inline-block; width: 40px;"></div>with open("config.txt", 'r') as f: <br>
-				<div style="display: inline-block; width: 80px;"></div>for line in f:<br>
-				<div style="display: inline-block; width: 120px;"></div>line_list = line.replace('\n','').split(" ")<br>
-				<div style="display: inline-block; width: 120px;"></div># print(line_list)<br>
-				<div style="display: inline-block; width: 120px;"></div>if line_list[0] == "subreddit":<br>
-				<div style="display: inline-block; width: 160px;"></div>subreddit = str(line_list[1])<br>
-				<div style="display: inline-block; width: 160px;"></div>continue<br>
-				<div style="display: inline-block; width: 120px;"></div>elif line_list[0] == "Number":<br>
-				<div style="display: inline-block; width: 160px;"></div>n = str(line_list[1])<br>
-				<div style="display: inline-block; width: 160px;"></div>continue<br>
-				<div style="display: inline-block; width: 120px;"></div>elif line_list[0] == "sort_filter":<br>
-				<div style="display: inline-block; width: 160px;"></div>sort_filter = str(line_list[1])<br>
-				<div style="display: inline-block; width: 160px;"></div>if sort_filter == "top":<br>
-				<div style="display: inline-block; width: 200px;"></div>top_filter = str(line_list[2])<br>
-				<div style="display: inline-block; width: 200px;"></div>continue<br>
-				<div style="display: inline-block; width: 120px;"></div>elif line_list[0] == "Destination":<br>
-				<div style="display: inline-block; width: 160px;"></div>target = str(line_list[1])<br>
-				<div style="display: inline-block; width: 40px;"></div>if subreddit == None or n == None or sort_filter == None or target == None:<br>
-				<div style="display: inline-block; width: 80px;"></div>config = False<br>
-				<div style="display: inline-block; width: 80px;"></div>if not os.path.exists(target):<br>
-				<div style="display: inline-block; width: 120px;"></div>os.mkdir(target)<br>
-				<div style="display: inline-block; width: 40px;"></div>else: <br>
-				<div style="display: inline-block; width: 80px;"></div>config = True<br>
-				<div style="display: inline-block; width: 80px;"></div>print("configuration loaded successfully!")<br>
-				<div style="display: inline-block; width: 80px;"></div>print(("Subreddit = " + str(subreddit)))<br>
-				except:<br>
-				<div style="display: inline-block; width: 40px;"></div>config = False<br>
+                <div style="display: inline-block; width: 40px;"></div>with open("config.txt", 'r') as f: <br>
+                <div style="display: inline-block; width: 80px;"></div>for line in f:<br>
+                <div style="display: inline-block; width: 120px;"></div>line_list = line.replace('\n','').split(" ")<br>
+                <div style="display: inline-block; width: 120px;"></div># print(line_list)<br>
+                <div style="display: inline-block; width: 120px;"></div>if line_list[0] == "subreddit":<br>
+                <div style="display: inline-block; width: 160px;"></div>subreddit = str(line_list[1])<br>
+                <div style="display: inline-block; width: 160px;"></div>continue<br>
+                <div style="display: inline-block; width: 120px;"></div>elif line_list[0] == "Number":<br>
+                <div style="display: inline-block; width: 160px;"></div>n = str(line_list[1])<br>
+                <div style="display: inline-block; width: 160px;"></div>continue<br>
+                <div style="display: inline-block; width: 120px;"></div>elif line_list[0] == "sort_filter":<br>
+                <div style="display: inline-block; width: 160px;"></div>sort_filter = str(line_list[1])<br>
+                <div style="display: inline-block; width: 160px;"></div>if sort_filter == "top":<br>
+                <div style="display: inline-block; width: 200px;"></div>top_filter = str(line_list[2])<br>
+                <div style="display: inline-block; width: 200px;"></div>continue<br>
+                <div style="display: inline-block; width: 120px;"></div>elif line_list[0] == "Destination":<br>
+                <div style="display: inline-block; width: 160px;"></div>target = str(line_list[1])<br>
+                <div style="display: inline-block; width: 40px;"></div>if subreddit == None or n == None or sort_filter == None or target == None:<br>
+                <div style="display: inline-block; width: 80px;"></div>config = False<br>
+                <div style="display: inline-block; width: 80px;"></div>if not os.path.exists(target):<br>
+                <div style="display: inline-block; width: 120px;"></div>os.mkdir(target)<br>
+                <div style="display: inline-block; width: 40px;"></div>else: <br>
+                <div style="display: inline-block; width: 80px;"></div>config = True<br>
+                <div style="display: inline-block; width: 80px;"></div>print("configuration loaded successfully!")<br>
+                <div style="display: inline-block; width: 80px;"></div>print(("Subreddit = " + str(subreddit)))<br>
+                except:<br>
+                <div style="display: inline-block; width: 40px;"></div>config = False<br><br>
                     
                 </div>
                 <div id="description" class="project_description">
@@ -58,83 +58,158 @@
                 <!-- The following are the individual snip-its for the viewer -->
                 <div id="PRJ0" style="display: none;">
                     try:<br>
-					<div style="display: inline-block; width: 40px;"></div>with open("config.txt", 'r') as f: <br>
-					<div style="display: inline-block; width: 80px;"></div>for line in f:<br>
-					<div style="display: inline-block; width: 120px;"></div>line_list = line.replace('\n','').split(" ")<br>
-					<div style="display: inline-block; width: 120px;"></div># print(line_list)<br>
-					<div style="display: inline-block; width: 120px;"></div>if line_list[0] == "subreddit":<br>
-					<div style="display: inline-block; width: 160px;"></div>subreddit = str(line_list[1])<br>
-					<div style="display: inline-block; width: 160px;"></div>continue<br>
-					<div style="display: inline-block; width: 120px;"></div>elif line_list[0] == "Number":<br>
-					<div style="display: inline-block; width: 160px;"></div>n = str(line_list[1])<br>
-					<div style="display: inline-block; width: 160px;"></div>continue<br>
-					<div style="display: inline-block; width: 120px;"></div>elif line_list[0] == "sort_filter":<br>
-					<div style="display: inline-block; width: 160px;"></div>sort_filter = str(line_list[1])<br>
-					<div style="display: inline-block; width: 160px;"></div>if sort_filter == "top":<br>
-					<div style="display: inline-block; width: 200px;"></div>top_filter = str(line_list[2])<br>
-					<div style="display: inline-block; width: 200px;"></div>continue<br>
-					<div style="display: inline-block; width: 120px;"></div>elif line_list[0] == "Destination":<br>
-					<div style="display: inline-block; width: 160px;"></div>target = str(line_list[1])<br>
-					<div style="display: inline-block; width: 40px;"></div>if subreddit == None or n == None or sort_filter == None or target == None:<br>
-					<div style="display: inline-block; width: 80px;"></div>config = False<br>
-					<div style="display: inline-block; width: 80px;"></div>if not os.path.exists(target):<br>
-					<div style="display: inline-block; width: 120px;"></div>os.mkdir(target)<br>
-					<div style="display: inline-block; width: 40px;"></div>else: <br>
-					<div style="display: inline-block; width: 80px;"></div>config = True<br>
-					<div style="display: inline-block; width: 80px;"></div>print("configuration loaded successfully!")<br>
-					<div style="display: inline-block; width: 80px;"></div>print(("Subreddit = " + str(subreddit)))<br>
-					except:<br>
-					<div style="display: inline-block; width: 40px;"></div>config = False<br>
+                    <div style="display: inline-block; width: 40px;"></div>with open("config.txt", 'r') as f: <br>
+                    <div style="display: inline-block; width: 80px;"></div>for line in f:<br>
+                    <div style="display: inline-block; width: 120px;"></div>line_list = line.replace('\n','').split(" ")<br>
+                    <div style="display: inline-block; width: 120px;"></div># print(line_list)<br>
+                    <div style="display: inline-block; width: 120px;"></div>if line_list[0] == "subreddit":<br>
+                    <div style="display: inline-block; width: 160px;"></div>subreddit = str(line_list[1])<br>
+                    <div style="display: inline-block; width: 160px;"></div>continue<br>
+                    <div style="display: inline-block; width: 120px;"></div>elif line_list[0] == "Number":<br>
+                    <div style="display: inline-block; width: 160px;"></div>n = str(line_list[1])<br>
+                    <div style="display: inline-block; width: 160px;"></div>continue<br>
+                    <div style="display: inline-block; width: 120px;"></div>elif line_list[0] == "sort_filter":<br>
+                    <div style="display: inline-block; width: 160px;"></div>sort_filter = str(line_list[1])<br>
+                    <div style="display: inline-block; width: 160px;"></div>if sort_filter == "top":<br>
+                    <div style="display: inline-block; width: 200px;"></div>top_filter = str(line_list[2])<br>
+                    <div style="display: inline-block; width: 200px;"></div>continue<br>
+                    <div style="display: inline-block; width: 120px;"></div>elif line_list[0] == "Destination":<br>
+                    <div style="display: inline-block; width: 160px;"></div>target = str(line_list[1])<br>
+                    <div style="display: inline-block; width: 40px;"></div>if subreddit == None or n == None or sort_filter == None or target == None:<br>
+                    <div style="display: inline-block; width: 80px;"></div>config = False<br>
+                    <div style="display: inline-block; width: 80px;"></div>if not os.path.exists(target):<br>
+                    <div style="display: inline-block; width: 120px;"></div>os.mkdir(target)<br>
+                    <div style="display: inline-block; width: 40px;"></div>else: <br>
+                    <div style="display: inline-block; width: 80px;"></div>config = True<br>
+                    <div style="display: inline-block; width: 80px;"></div>print("configuration loaded successfully!")<br>
+                    <div style="display: inline-block; width: 80px;"></div>print(("Subreddit = " + str(subreddit)))<br>
+                    except:<br>
+                    <div style="display: inline-block; width: 40px;"></div>config = False<br><br>
                 </div>
                 <div id="DES0" style="display: none;">
                     This function determines the product of a and b and returns the modulus of that by the number mod. This function is designed for use on the Ardiuno Mega, where an unsigned long is represented by 32 bits. 
                 </div>
 
                 <div id="PRJ1" style="display: none;">
-                	def number_format(number): <br><br>
-				    <div style="display: inline-block; width: 40px;"></div>result = []<br>
-				    <div style="display: inline-block; width: 40px;"></div>place = 0 <br>
-				    <div style="display: inline-block; width: 40px;"></div>temp = None <br>
-				    <div style="display: inline-block; width: 40px;"></div># formats the string nicely - # 00 00 <br>
-				    <div style="display: inline-block; width: 40px;"></div>for i, c in enumerate(reversed(str(number))): <br>
-				    <div style="display: inline-block; width: 80px;"></div>if i and (not (i % 2)) and place  5: <br>
-				    <div style="display: inline-block; width: 120px;"></div>result.insert(0, ' ') <br>
-				    <div style="display: inline-block; width: 80px;"></div>result.insert(0, c) <br>
-				    <div style="display: inline-block; width: 80px;"></div>place += 1 <br>
-				    <div style="display: inline-block; width: 40px;"></div>result = ''.join(result)<br><br>
-				    <div style="display: inline-block; width: 40px;"></div># this is a hack. Don't worry about how or why <br>
-				    <div style="display: inline-block; width: 40px;"></div>if result[0] == '-': <br>
-				    <div style="display: inline-block; width: 80px;"></div>temp = 1 <br>
-				    <div style="display: inline-block; width: 80px;"></div>result = result[1:] <br>
-				    <div style="display: inline-block; width: 40px;"></div>if result[0] == ' ': <br>
-				    <div style="display: inline-block; width: 80px;"></div>result = result[1:] <br><br>
-				    <div style="display: inline-block; width: 40px;"></div># puts in the g, s, c into the string <br>
-				    <div style="display: inline-block; width: 40px;"></div># result becomes: #g 00s 00c <br>
-				    <div style="display: inline-block; width: 40px;"></div>result = rreplace(result, ' ', 's', 1) <br>
-				    <div style="display: inline-block; width: 40px;"></div>result = rreplace(result, ' ', 'g', 1)
-				    <div style="display: inline-block; width: 40px;"></div>result += 'c' <br>
-				    <div style="display: inline-block; width: 40px;"></div>result = result.replace('s', 's ') <br>
-				    <div style="display: inline-block; width: 40px;"></div>result = result.replace('g', 'g ') <br><br>
-				    <div style="display: inline-block; width: 40px;"></div># finishing the  <br>
-				    <div style="display: inline-block; width: 40px;"></div>if temp is not None: <br>
-				    <div style="display: inline-block; width: 80px;"></div>result = '-' + result <br>
-				    <div style="display: inline-block; width: 40px;"></div>return result <br>
+                    def number_format(number): <br><br>
+                    <div style="display: inline-block; width: 40px;"></div>result = []<br>
+                    <div style="display: inline-block; width: 40px;"></div>place = 0 <br>
+                    <div style="display: inline-block; width: 40px;"></div>temp = None <br>
+                    <div style="display: inline-block; width: 40px;"></div># formats the string nicely - # 00 00 <br>
+                    <div style="display: inline-block; width: 40px;"></div>for i, c in enumerate(reversed(str(number))): <br>
+                    <div style="display: inline-block; width: 80px;"></div>if i and (not (i % 2)) and place  5: <br>
+                    <div style="display: inline-block; width: 120px;"></div>result.insert(0, ' ') <br>
+                    <div style="display: inline-block; width: 80px;"></div>result.insert(0, c) <br>
+                    <div style="display: inline-block; width: 80px;"></div>place += 1 <br>
+                    <div style="display: inline-block; width: 40px;"></div>result = ''.join(result)<br><br>
+                    <div style="display: inline-block; width: 40px;"></div># this is a hack. Don't worry about how or why <br>
+                    <div style="display: inline-block; width: 40px;"></div>if result[0] == '-': <br>
+                    <div style="display: inline-block; width: 80px;"></div>temp = 1 <br>
+                    <div style="display: inline-block; width: 80px;"></div>result = result[1:] <br>
+                    <div style="display: inline-block; width: 40px;"></div>if result[0] == ' ': <br>
+                    <div style="display: inline-block; width: 80px;"></div>result = result[1:] <br><br>
+                    <div style="display: inline-block; width: 40px;"></div># puts in the g, s, c into the string <br>
+                    <div style="display: inline-block; width: 40px;"></div># result becomes: #g 00s 00c <br>
+                    <div style="display: inline-block; width: 40px;"></div>result = rreplace(result, ' ', 's', 1) <br>
+                    <div style="display: inline-block; width: 40px;"></div>result = rreplace(result, ' ', 'g', 1)
+                    <div style="display: inline-block; width: 40px;"></div>result += 'c' <br>
+                    <div style="display: inline-block; width: 40px;"></div>result = result.replace('s', 's ') <br>
+                    <div style="display: inline-block; width: 40px;"></div>result = result.replace('g', 'g ') <br><br>
+                    <div style="display: inline-block; width: 40px;"></div># finishing the  <br>
+                    <div style="display: inline-block; width: 40px;"></div>if temp is not None: <br>
+                    <div style="display: inline-block; width: 80px;"></div>result = '-' + result <br>
+                    <div style="display: inline-block; width: 40px;"></div>return result <br><br>
 
                 </div>
                 <div id="DES1" style="display: none;">
                     This function formats a number into a price for a game called Guild Wars 2 for items returned using the game's Trading Area API    
                 </div>
-
                 <div id="PRJ2" style="display: none;">
+                class Field(object): <br><br>
+
+                <div style="display: inline-block; width: 40px;"></div>    def init(self):<br>
+                <div style="display: inline-block; width: 40px;"></div>    """<br>
+                <div style="display: inline-block; width: 40px;"></div>    Creates and builds a randomly generated graph that the field lies on.<br>
+                <div style="display: inline-block; width: 40px;"></div>    The graph has vertices that are coordinates on a grid<br>
+                <div style="display: inline-block; width: 40px;"></div>    Generates walls randomly with a percentage approximately equal to the wall density<br>
+                <div style="display: inline-block; width: 40px;"></div>    The graph will always be completely connected (i.e. never greater than 1 subgraph)<br>
+                <div style="display: inline-block; width: 40px;"></div>        and each vertex will have at least 2 neighbours, i.e. and entry point and exit point.<br>
+                <div style="display: inline-block; width: 40px;"></div>    """<br>
+                <div style="display: inline-block; width: 40px;"></div>    self._started = True<br>
+                <div style="display: inline-block; width: 40px;"></div>    wall_prob = self._wall_density<br>
+                <div style="display: inline-block; width: 40px;"></div>    while True:<br>
+                <div style="display: inline-block; width: 80px;"></div>for x in range(0, self._width):<br>
+                <div style="display: inline-block; width: 120px;"></div>self._grid.insert(x, [])<br>
+                <div style="display: inline-block; width: 80px;"></div>wall_set = set() <br>
+                <div style="display: inline-block; width: 80px;"></div>valid = True<br>
+                <div style="display: inline-block; width: 80px;"></div>g = Graph()<br>
+                <div style="display: inline-block; width: 80px;"></div># loop through each tile and decide if it should be a wall or not<br>
+                <div style="display: inline-block; width: 80px;"></div>for i in range(0, self.height):<br>
+                <div style="display: inline-block; width: 120px;"></div>for j in range(0, self.width):<br>
+                <div style="display: inline-block; width: 160px;"></div>prob = randint(0, 100)<br>
+                <div style="display: inline-block; width: 160px;"></div># if its a wall, make it a wall<br>
+                <div style="display: inline-block; width: 160px;"></div>prob < wall_prob:<br>
+                <div style="display: inline-block; width: 200px;"></div>wall_set.add((j, i))<br>
+                <div style="display: inline-block; width: 200px;"></div>self._grid[j].insert(i, grid(j, i, True))<br>
+                <div style="display: inline-block; width: 160px;"></div>else:<br>
+                <div style="display: inline-block; width: 200px;"></div>g.add_vertex((j, i))<br>
+                <div style="display: inline-block; width: 200px;"></div>self._grid[j].insert(i, grid(j, i, False))<br>
+                <div style="display: inline-block; width: 200px;"></div># if its not the top row, add up edge<br>
+                <div style="display: inline-block; width: 200px;"></div>if i > 0 and (j, i-1) not in wall_set:<br>
+                <div style="display: inline-block; width: 240px;"></div>g.add_edge(((j, i-1), (j, i)))<br>
+                <div style="display: inline-block; width: 240px;"></div>g.add_edge(((j, i), (j, i-1)))<br>
+                <div style="display: inline-block; width: 200px;"></div># if its not the left-most column, add left edge<br>
+                <div style="display: inline-block; width: 200px;"></div>if j > 0 and (j-1, i) not in wall_set:<br>
+                <div style="display: inline-block; width: 240px;"></div>g.add_edge(((j-1, i), (j, i)))<br>
+                <div style="display: inline-block; width: 240px;"></div>g.add_edge(((j, i), (j-1, i)))<br> <br>
+
+                <div style="display: inline-block; width: 80px;"></div># makes sure the graph has only 1 subgraph<br>
+                <div style="display: inline-block; width: 80px;"></div>components = count_components(g)<br>
+                <div style="display: inline-block; width: 80px;"></div>if components != 1:<br>
+                <div style="display: inline-block; width: 120px;"></div>continue<br>
+                <div style="display: inline-block; width: 80px;"></div># makes sure each passable tile has at least 2 neighbours for entry and exit<br>
+                <div style="display: inline-block; width: 80px;"></div>for v in g.vertices():<br>
+                <div style="display: inline-block; width: 120px;"></div>if len(g.neighbours(v)) < 2:<br>
+                <div style="display: inline-block; width: 160px;"></div>valid = False<br>
+                <div style="display: inline-block; width: 160px;"></div>break<br>
+
+                <div style="display: inline-block; width: 80px;"></div># print("Subgraphs = " + str(components))<br>
+                <div style="display: inline-block; width: 80px;"></div># if 1 subgraph and each passable tile has at least 2 neighbours, the graph<br>
+                <div style="display: inline-block; width: 80px;"></div># is a valid map and should be generated. Otherwise make a new one <br>
+                <div style="display: inline-block; width: 80px;"></div>if components == 1 and valid: <br>
+                <div style="display: inline-block; width: 120px;"></div>break <br>
+                <div style="display: inline-block; width: 80px;"></div>else: <br>
+                <div style="display: inline-block; width: 120px;"></div>self._grid = []<br> <br>
                 </div>
                 <div id="DES2" style="display: none;">
-                    This CSS is used to style all of the containers used to construct this project selector.
+                    Generates a graph for an implementation of Snake using Djikstra's algorithm for the AI controlled snakes
                 </div>
 
                 <div id="PRJ3" style="display: none;">
+                def valid_item(self, name):<br>
+                <div style="display: inline-block; width: 40px;"></div>"""<br>
+                <div style="display: inline-block; width: 80px;"></div>Checks if the chosen item is a valid item.<br>
+                <div style="display: inline-block; width: 80px;"></div>Returns:<br>
+                <div style="display: inline-block; width: 120px;"></div>None if not a valid item<br>
+                <div style="display: inline-block; width: 120px;"></div>ID of a valid item<br>
+                <div style="display: inline-block; width: 40px;"></div>"""<br>
+                <div style="display: inline-block; width: 40px;"></div>if name not in self.items:<br>
+                <div style="display: inline-block; width: 80px;"></div>return None<br>
+                <div style="display: inline-block; width: 40px;"></div>else:<br>
+                <div style="display: inline-block; width: 80px;"></div>return self.get_item(name)<br><br>
+
+                def get_item(self, item_name): <br>
+                <div style="display: inline-block; width: 40px;"></div>"""<br>
+                <div style="display: inline-block; width: 40px;"></div>Takes a valid item name and returns its ID<br>
+                <div style="display: inline-block; width: 40px;"></div>"""<br>
+                <div style="display: inline-block; width: 40px;"></div>reader = self.reader<br>
+                <div style="display: inline-block; width: 40px;"></div>item_id = str(self.items[item_name])<br><br>
+
+                <div style="display: inline-block; width: 40px;"></div>return json.load(reader(urllib.request.urlopen(self.url + item_id)))<br><br>
+
                 </div>
                 <div id="DES3" style="display: none;">
-                    This Java-script uses Twitch's API to check if a user is streaming. This function can be used to edit parts of a web-page to indicate if a user is streaming. It also can grab information about the current streaming session.
+                    This script fetches an item from the Guild Wars 2 Trading Post API and then calculates the profit gained from selling the item.
                 </div>
                 <!-- End of Snip-its -->
 
@@ -143,9 +218,9 @@
                     <div style="height: 5px;"></div>
                     <div button-id="1" class="project_button" style="color: rgb(254, 250, 255); background-color: rgb(53, 52, 59);">Price Formatter</div>
                     <div style="height: 5px;"></div>
-                    <div button-id="2" class="project_button" style="color: rgb(254, 250, 255); background-color: rgb(53, 52, 59);">CSS Example</div>
+                    <div button-id="2" class="project_button" style="color: rgb(254, 250, 255); background-color: rgb(53, 52, 59);">Graph Generator</div>
                     <div style="height: 5px;"></div>
-                    <div button-id="3" class="project_button" style="color: rgb(254, 250, 255); background-color: rgb(53, 52, 59);">Twitch API</div>
+                    <div button-id="3" class="project_button" style="color: rgb(254, 250, 255); background-color: rgb(53, 52, 59);">Guild Wars 2 REST-API</div>
                 </div>
 
             </div>
