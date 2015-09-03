@@ -1,2 +1,118 @@
-﻿
+﻿.project_viewer {
+	position: relative;
+	display: inline-block;
+	width: 1000px;
+	height: 300px;
+}
 
+.project_preview {
+	position: absolute;
+	text-align: left;
+	background-color: #FEFAFF;
+	width: 660px;
+	height: 300px;
+	font-family: Consolas;
+	border-radius: 4px;
+	border: 1px solid #777585;
+	white-space: nowrap;
+	overflow: auto;
+	z-index: 0;
+
+}
+
+.project_selector {
+	position: absolute;
+	left: 675px;
+	width: 325px;
+	height: 250px;
+	text-align: left;
+}
+
+.project_description {
+	position: absolute;
+	text-align: left;
+	left: 676px;
+	top: 175px;
+	font-size: 80%;
+}
+
+.project_button {
+	width: 310px;
+	height: 25px;
+	padding: 5px;
+	display: block;
+	background-color: #35343B;
+	border-radius: 3px;
+	border: 1px solid #35343B;
+	color: white;
+}
+
+.project_button:hover {
+	background-color: #FEFAFF !important;
+	color: #35343B !important;
+	cursor: pointer;
+}
+
+.showcase_block {
+	position: relative;
+	width: 416px;
+	height: 120px;
+	display: inline-block;
+	font-family: roboto;
+	z-index: 0;
+}
+
+.showcase_icon {
+	position: absolute;
+	top: 23px;
+	left: 0px;
+	width: 74px;
+	height: 74px;
+	border-radius: 37px;
+	color: #1597D8;
+	border: 1px solid #1597D8;
+}
+
+.showcase_content {
+	position: absolute;
+	text-align: left;
+	font-size: 80%;
+	left: 100px;	
+}
+
+.activity_container {
+	position: relative;
+	text-align: left;
+	width: 850px;
+	height: 105%;
+	border-radius: 5px;
+	display: inline-block;
+	font-family: roboto;
+	z-index: 0;
+}
+
+.activity_block {
+	position: relative;
+	width: 280px;
+	height: 90px;
+	display: inline-block;
+	font-family: roboto;
+	z-index: 0;
+}
+
+.activity_icon {
+	position: absolute;
+	width: 64px;
+	height: 64px;
+	top: 0px;
+	left: 0px;
+}
+
+.activity_content {
+	position: absolute;
+	text-align: left;
+	font-size: 95%;
+	padding-right: 2px;
+	top: 0px;
+	left: 0px;	
+}

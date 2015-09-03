@@ -3,6 +3,9 @@
     <head>
 	    <link type="text/css" rel="stylesheet" href="CSS/projects.css"/>
 	    <link type="text/css" rel="stylesheet" href="CSS/navbar.css"/>
+	    <script src="scripts/index.js"></script>
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <script src="scripts/index.js"></script>
 	    <title>Projects</title>
     </head>
 
@@ -13,6 +16,139 @@
 	      <li class="menu_item"><a class="menu_link" href="about.html">About</a></li>
 	      <li class="menu_item"><a class="menu_link" href="contact.html">Contact</a></li>
 	    </ul>
-   
+	    <br>
+
+	    <div align="center">
+   		<div class="project_viewer">
+                <div id="viewer" class="project_preview">
+                try:<br>
+				<div style="display: inline-block; width: 40px;"></div>with open("config.txt", 'r') as f: <br>
+				<div style="display: inline-block; width: 80px;"></div>for line in f:<br>
+				<div style="display: inline-block; width: 120px;"></div>line_list = line.replace('\n','').split(" ")<br>
+				<div style="display: inline-block; width: 120px;"></div># print(line_list)<br>
+				<div style="display: inline-block; width: 120px;"></div>if line_list[0] == "subreddit":<br>
+				<div style="display: inline-block; width: 160px;"></div>subreddit = str(line_list[1])<br>
+				<div style="display: inline-block; width: 160px;"></div>continue<br>
+				<div style="display: inline-block; width: 120px;"></div>elif line_list[0] == "Number":<br>
+				<div style="display: inline-block; width: 160px;"></div>n = str(line_list[1])<br>
+				<div style="display: inline-block; width: 160px;"></div>continue<br>
+				<div style="display: inline-block; width: 120px;"></div>elif line_list[0] == "sort_filter":<br>
+				<div style="display: inline-block; width: 160px;"></div>sort_filter = str(line_list[1])<br>
+				<div style="display: inline-block; width: 160px;"></div>if sort_filter == "top":<br>
+				<div style="display: inline-block; width: 200px;"></div>top_filter = str(line_list[2])<br>
+				<div style="display: inline-block; width: 200px;"></div>continue<br>
+				<div style="display: inline-block; width: 120px;"></div>elif line_list[0] == "Destination":<br>
+				<div style="display: inline-block; width: 160px;"></div>target = str(line_list[1])<br>
+				<div style="display: inline-block; width: 40px;"></div>if subreddit == None or n == None or sort_filter == None or target == None:<br>
+				<div style="display: inline-block; width: 80px;"></div>config = False<br>
+				<div style="display: inline-block; width: 80px;"></div>if not os.path.exists(target):<br>
+				<div style="display: inline-block; width: 120px;"></div>os.mkdir(target)<br>
+				<div style="display: inline-block; width: 40px;"></div>else: <br>
+				<div style="display: inline-block; width: 80px;"></div>config = True<br>
+				<div style="display: inline-block; width: 80px;"></div>print("configuration loaded successfully!")<br>
+				<div style="display: inline-block; width: 80px;"></div>print(("Subreddit = " + str(subreddit)))<br>
+				except:<br>
+				<div style="display: inline-block; width: 40px;"></div>config = False<br>
+                    
+                </div>
+                <div id="description" class="project_description">
+                    This code-block loads a configuration in for a program that downloads pictures from a specific subreddit on Reddit.com such as reddit.com/r/pics or reddit.com/r/images
+                </div>
+
+                <!-- The following are the individual snip-its for the viewer -->
+                <div id="PRJ0" style="display: none;">
+                    try:<br>
+					<div style="display: inline-block; width: 40px;"></div>with open("config.txt", 'r') as f: <br>
+					<div style="display: inline-block; width: 80px;"></div>for line in f:<br>
+					<div style="display: inline-block; width: 120px;"></div>line_list = line.replace('\n','').split(" ")<br>
+					<div style="display: inline-block; width: 120px;"></div># print(line_list)<br>
+					<div style="display: inline-block; width: 120px;"></div>if line_list[0] == "subreddit":<br>
+					<div style="display: inline-block; width: 160px;"></div>subreddit = str(line_list[1])<br>
+					<div style="display: inline-block; width: 160px;"></div>continue<br>
+					<div style="display: inline-block; width: 120px;"></div>elif line_list[0] == "Number":<br>
+					<div style="display: inline-block; width: 160px;"></div>n = str(line_list[1])<br>
+					<div style="display: inline-block; width: 160px;"></div>continue<br>
+					<div style="display: inline-block; width: 120px;"></div>elif line_list[0] == "sort_filter":<br>
+					<div style="display: inline-block; width: 160px;"></div>sort_filter = str(line_list[1])<br>
+					<div style="display: inline-block; width: 160px;"></div>if sort_filter == "top":<br>
+					<div style="display: inline-block; width: 200px;"></div>top_filter = str(line_list[2])<br>
+					<div style="display: inline-block; width: 200px;"></div>continue<br>
+					<div style="display: inline-block; width: 120px;"></div>elif line_list[0] == "Destination":<br>
+					<div style="display: inline-block; width: 160px;"></div>target = str(line_list[1])<br>
+					<div style="display: inline-block; width: 40px;"></div>if subreddit == None or n == None or sort_filter == None or target == None:<br>
+					<div style="display: inline-block; width: 80px;"></div>config = False<br>
+					<div style="display: inline-block; width: 80px;"></div>if not os.path.exists(target):<br>
+					<div style="display: inline-block; width: 120px;"></div>os.mkdir(target)<br>
+					<div style="display: inline-block; width: 40px;"></div>else: <br>
+					<div style="display: inline-block; width: 80px;"></div>config = True<br>
+					<div style="display: inline-block; width: 80px;"></div>print("configuration loaded successfully!")<br>
+					<div style="display: inline-block; width: 80px;"></div>print(("Subreddit = " + str(subreddit)))<br>
+					except:<br>
+					<div style="display: inline-block; width: 40px;"></div>config = False<br>
+                </div>
+                <div id="DES0" style="display: none;">
+                    This function determines the product of a and b and returns the modulus of that by the number mod. This function is designed for use on the Ardiuno Mega, where an unsigned long is represented by 32 bits. 
+                </div>
+
+                <div id="PRJ1" style="display: none;">
+                	def number_format(number): <br><br>
+				    <div style="display: inline-block; width: 40px;"></div>result = []<br>
+				    <div style="display: inline-block; width: 40px;"></div>place = 0 <br>
+				    <div style="display: inline-block; width: 40px;"></div>temp = None <br>
+				    <div style="display: inline-block; width: 40px;"></div># formats the string nicely - # 00 00 <br>
+				    <div style="display: inline-block; width: 40px;"></div>for i, c in enumerate(reversed(str(number))): <br>
+				    <div style="display: inline-block; width: 80px;"></div>if i and (not (i % 2)) and place  5: <br>
+				    <div style="display: inline-block; width: 120px;"></div>result.insert(0, ' ') <br>
+				    <div style="display: inline-block; width: 80px;"></div>result.insert(0, c) <br>
+				    <div style="display: inline-block; width: 80px;"></div>place += 1 <br>
+				    <div style="display: inline-block; width: 40px;"></div>result = ''.join(result)<br><br>
+				    <div style="display: inline-block; width: 40px;"></div># this is a hack. Don't worry about how or why <br>
+				    <div style="display: inline-block; width: 40px;"></div>if result[0] == '-': <br>
+				    <div style="display: inline-block; width: 80px;"></div>temp = 1 <br>
+				    <div style="display: inline-block; width: 80px;"></div>result = result[1:] <br>
+				    <div style="display: inline-block; width: 40px;"></div>if result[0] == ' ': <br>
+				    <div style="display: inline-block; width: 80px;"></div>result = result[1:] <br><br>
+				    <div style="display: inline-block; width: 40px;"></div># puts in the g, s, c into the string <br>
+				    <div style="display: inline-block; width: 40px;"></div># result becomes: #g 00s 00c <br>
+				    <div style="display: inline-block; width: 40px;"></div>result = rreplace(result, ' ', 's', 1) <br>
+				    <div style="display: inline-block; width: 40px;"></div>result = rreplace(result, ' ', 'g', 1)
+				    <div style="display: inline-block; width: 40px;"></div>result += 'c' <br>
+				    <div style="display: inline-block; width: 40px;"></div>result = result.replace('s', 's ') <br>
+				    <div style="display: inline-block; width: 40px;"></div>result = result.replace('g', 'g ') <br><br>
+				    <div style="display: inline-block; width: 40px;"></div># finishing the  <br>
+				    <div style="display: inline-block; width: 40px;"></div>if temp is not None: <br>
+				    <div style="display: inline-block; width: 80px;"></div>result = '-' + result <br>
+				    <div style="display: inline-block; width: 40px;"></div>return result <br>
+
+                </div>
+                <div id="DES1" style="display: none;">
+                    This function formats a number into a price for a game called Guild Wars 2 for items returned using the game's Trading Area API    
+                </div>
+
+                <div id="PRJ2" style="display: none;">
+                </div>
+                <div id="DES2" style="display: none;">
+                    This CSS is used to style all of the containers used to construct this project selector.
+                </div>
+
+                <div id="PRJ3" style="display: none;">
+                </div>
+                <div id="DES3" style="display: none;">
+                    This Java-script uses Twitch's API to check if a user is streaming. This function can be used to edit parts of a web-page to indicate if a user is streaming. It also can grab information about the current streaming session.
+                </div>
+                <!-- End of Snip-its -->
+
+                <div class="project_selector">
+                    <div id="initial" button-id="0" class="project_button" style="color: rgb(53, 52, 59); background-color: rgb(254, 250, 255);">Configuration Loader</div>
+                    <div style="height: 5px;"></div>
+                    <div button-id="1" class="project_button" style="color: rgb(254, 250, 255); background-color: rgb(53, 52, 59);">Price Formatter</div>
+                    <div style="height: 5px;"></div>
+                    <div button-id="2" class="project_button" style="color: rgb(254, 250, 255); background-color: rgb(53, 52, 59);">CSS Example</div>
+                    <div style="height: 5px;"></div>
+                    <div button-id="3" class="project_button" style="color: rgb(254, 250, 255); background-color: rgb(53, 52, 59);">Twitch API</div>
+                </div>
+
+            </div>
+            </div>
     </body>
 </html>
