@@ -3,6 +3,7 @@
 	display: inline-block;
 	width: 1000px;
 	height: 300px;
+
 }
 
 .project_preview {
@@ -11,12 +12,12 @@
 	background-color: #FEFAFF;
 	width: 660px;
 	height: 300px;
-	font-family: Consolas;
 	border-radius: 4px;
 	border: 1px solid #777585;
 	white-space: nowrap;
 	overflow: auto;
 	z-index: 0;
+	font-family:Consolas, Courier;
 
 }
 
